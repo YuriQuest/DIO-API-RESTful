@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 
 public class Card {
 
-    private long id;
+    private Long id;
     private String number;
     private BigDecimal Limit;
 

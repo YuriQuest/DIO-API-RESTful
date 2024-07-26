@@ -2,7 +2,7 @@ package me.dio.domain.model;
 
 public class Account {
 
-    private long id;
+    private Long id;
     private String number;
     private String  agency;
     private BigDecimal  balance;
