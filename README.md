@@ -1,4 +1,4 @@
-# Santander Dev Week 2023
+# Santander 2024 Backend com Java
 Java RESTful API criada para a Santander 2024 Backend com Java.
 
 # Principais Tecnologias
