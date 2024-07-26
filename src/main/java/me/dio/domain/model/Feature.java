@@ -1,5 +1,5 @@
 package me.dio.domain.model;
 
-public class Feature {
+public class Feature extends BaseItem {
 
 }
