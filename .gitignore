@@ -1,5 +1,8 @@
-# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,eclipse,intellij
-# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,eclipse,intellij
+# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,intellij,eclipse,gradle,appbuilder
+# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,intellij,eclipse,gradle,appbuilder
+
+### AppBuilder ###
+.ab/
 
 ### Eclipse ###
 .metadata
@@ -199,4 +202,31 @@ fabric.properties
 .history
 .ionide
 
-# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,eclipse,intellij
+### Gradle ###
+.gradle
+**/build/
+!src/**/build/
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+
+# Avoid ignore Gradle wrappper properties
+!gradle-wrapper.properties
+
+# Cache of project
+.gradletasknamecache
+
+# Eclipse Gradle plugin generated files
+# Eclipse Core
+.project
+# JDT-specific (Eclipse Java Development Tools)
+.classpath
+
+### Gradle Patch ###
+# Java heap dump
+*.hprof
+
+# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,intellij,eclipse,gradle,appbuilder
