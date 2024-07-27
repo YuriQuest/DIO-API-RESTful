@@ -1,11 +1,29 @@
 package me.dio.domain.model;
 
+import java.math.BigDecimal;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity(name = "tb_account")
 public class Account {
 
+    @Id
+    @GeneratedValue(Strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column(unique = true)
     private String number;
+
     private String  agency;
+
+    @Column(scale = 2,precision = 13)
     private BigDecimal  balance;
+
+    @Column(name = "aditional_limit", scale = 2,precision = 13)
     private BigDecimal  limit;
 
     public long getId() { return id; }
